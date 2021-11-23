@@ -1,0 +1,20 @@
+.contact-header{
+    background-image:linear-gradient(
+        90deg, rgba(45, 150, 156, 0.4) 0%, rgba(45, 150, 156, 0.4) ,rgba(143, 13, 59,.4) 60%), url(image1/num1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    background-repeat: no-repeat;  
+    position: relative;
+}
+.contact-header>h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color:#5bd2d8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

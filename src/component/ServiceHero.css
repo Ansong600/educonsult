@@ -1,0 +1,140 @@
+.service-container{
+    margin-bottom: 0rem;
+}
+.service-image{
+    background-image:linear-gradient(
+        90deg, rgba(143, 13, 59, 0.4) 0%, rgba(143, 13, 59, 0.4) 50%,rgba(143, 13, 59,.4) 50%), url(image1/num1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    background-repeat: no-repeat;  
+    position: relative;
+}
+.service-image>h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color:#5bd2d8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.admission1>h1{
+    color:#8F0D3B ;
+    margin-bottom:1rem; 
+    text-transform: capitalize;
+}
+.document-format1>h1{
+    color:#8F0D3B ; 
+    margin-bottom:1rem;
+    text-transform: capitalize;
+}
+.admission{
+    margin-left: 4rem;
+    grid-area: admission;
+}
+.document-format{
+    margin-right: 4rem;
+    grid-area:document-format;
+}
+.first-section1{
+    background-color: #2D969C;
+    margin-top:-.5rem;
+    padding:4rem 0;
+        height:30rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "admission document-format";
+        grid-gap: 5rem;
+    
+}
+.second-section1{
+        /* background-color: #2D969C; */
+        color:#2D969C ;
+        margin-top:5rem;
+        /* padding-top:2rem; */
+        height:30rem;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "hundred-percent client"
+        "hundred-percent satisfaction";
+        /* grid-gap: 5rem; */
+    
+}
+.hundred-percent{
+    grid-area:hundred-percent;
+    grid-column: span 1;
+    position: relative;
+    font-size:6rem;
+    border-right: .3rem solid #8F0D3B;
+    height: 80%;
+}
+.hundred-percent1{
+    position: absolute;
+    top:35%;
+    /* transform: translate(-50%,-50%); */
+    right:16%;
+
+}
+.client{
+    font-size:6rem;
+    grid-area:client;
+    position: relative;
+    height: 80%;
+}
+.client1{
+   position: absolute;
+   bottom: 0;
+   padding-left: 6rem;
+   line-height: 6rem;
+ 
+}
+.satisfaction{
+    grid-area:satisfaction;
+    font-size:6rem;
+    position: relative;
+    height: 80%;
+}
+.satisfaction1{
+    position: absolute;
+    top: 0;
+    line-height: 1rem;
+    padding-left: 6rem;
+}
+.third-section1{
+    background-color: #f7a758 ;
+    /* margin-top:.5rem; */
+        padding:4rem 0;
+        height:30rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "visa travel";
+        grid-gap: 5rem;
+    
+}
+.visa{
+    grid-area:visa;
+    margin-left: 4rem;
+    /* padding-bottom:  8rem; */
+}
+.travel{
+    grid-area:travel;
+    margin-right: 4rem;
+    /* padding-bottom:  8rem; */
+}
+.visa1>h1{
+    margin-bottom:.8rem;
+    color:#2D969C;
+}
+.travel1>h1{
+    margin-bottom:.8rem;
+    color:#2D969C;
+}

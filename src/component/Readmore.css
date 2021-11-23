@@ -1,0 +1,10 @@
+.text{
+    display: inline-block;
+    width: 100%;
+  }
+    
+  .read-or-hide{
+    color: rgb(201, 16, 16);
+    background-color: rgb(201, 16, 16);
+    cursor: pointer;
+  }

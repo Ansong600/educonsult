@@ -1,0 +1,133 @@
+.container1 {
+    margin-bottom: 10rem;
+
+}
+.container1>div {
+    /* background: darkblue; */
+    color: rgb(20, 18, 18);
+  
+}
+
+.header div>p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.header .divh3{
+    text-align: center;
+}
+.header .divh3 p{
+    text-align: left;
+}
+/* new codes */
+.header{
+    margin: 0 auto;
+    width:90%;
+    /* height: 25rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "divh1 divh2";
+    grid-gap: 5rem;
+}
+.divh1{
+    grid-area: divh1;
+}
+.divh2{
+    grid-area: divh2;
+}
+.divh3{
+    text-align: center;
+}
+.divh3 p{
+    text-align: justify;
+}
+.header3{
+    margin: 3rem auto;
+    width:70%;
+}
+.header div> h1{
+    color: #2D969C;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+}
+.header3 div h1{
+    color: #2D969C;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+}
+
+.read-or-hide{
+    background-color: #2D969C;
+    display: block;
+    width:20%;
+    padding: 0.4rem .5rem;
+    border-radius: .2rem;
+    text-align: center;
+    color:#fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+
+
+
+ 
+@media screen and (max-width: 900px){
+    .header{
+        margin: 0 auto;
+        width:70%;
+        /* height: 25rem; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "divh1" 
+                             "divh2";
+        grid-gap: 5rem;
+        text-align: justify;
+    }
+    .divh1,.divh2{
+        text-align: center;
+    }
+    .divh1 p,.divh2 p,.divh3 p{
+        text-align: left;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    .header{
+
+    }
+    .divh1 h1,.divh2 h1,.divh3 h1{
+      font-size:1.2rem;  
+    }
+    .divh1 p,.divh2 p{
+               
+    }
+    .read-or-hide{
+        width:40%;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .header{
+
+    }
+    .divh1,.divh2{
+        
+    }
+    .divh3 p{
+        font-size:.9rem;
+    }
+    .read-or-hide{
+        width:60%;
+    }
+
+}
+
+
+
+  

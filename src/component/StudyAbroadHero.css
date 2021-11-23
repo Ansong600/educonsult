@@ -1,0 +1,82 @@
+.studyheader{
+    display: inline-block;
+    height:30rem;
+    width:50%;
+    background-repeat: no-repeat;
+}
+.sheader2{
+    background-image:linear-gradient(
+        90deg, rgba(143, 13, 59, 0.4) 0%, rgba(143, 13, 59, 0.4) 50%,rgba(143, 13, 59,.4) 50%), url(image1/Student\ couple.jpeg);
+        background-size: cover;
+
+}
+.sheader1{
+    background-image:linear-gradient(
+        90deg, rgba(45, 150, 156, 0.4) 0%, rgba(45, 150, 156, 0.4) 50%,rgba(45, 150, 156,.4) 50%), url(image1/black\ boy\ learning.jpeg);
+        background-size: cover;
+        background-position: center;
+
+}
+.study-abroad{
+    margin:0 auto;
+    width:70%;
+    padding-top: 1.5rem;
+}
+.study-abroad>h1{
+    text-align: center;
+    color:#2D969C ;
+    text-transform:uppercase ;
+    
+}
+.study-abroad>p{
+    text-align: justify;
+
+}
+.card-grid{
+    /* background-color: #2D969C; */
+        margin-top:-2rem;
+        margin-left: 5rem;
+        padding:4rem 0;
+        height:30rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "cardUS cardCanada cardUK";
+        /* grid-gap: -10rem; */
+    
+}
+.cardbox{
+    height:100%;
+    width:85%;
+    padding:2rem 2.2rem 0 2.2rem;
+    background-color:#f5a04c ;
+    border-radius: .5rem;
+}
+.card-title{
+    color:#8F0D3B ;
+    margin-bottom: .65rem;
+    text-align: center;
+}
+.first-cards-heading{
+    text-align: center;
+    color: #2D969C;
+    margin-top: 3rem;
+}
+.second-cards-heading{
+    color:#2D969C;
+    margin-top: 0rem;
+    text-align: center;
+}
+.apply-now-btn1{
+    padding: 7px 15px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    background-color:#2D969C;
+    font-size: .8rem;
+    font-weight:600;
+    color:#fff;
+}
