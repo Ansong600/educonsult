@@ -47,17 +47,32 @@ function formHandler(event){
 
 
   async function sendData(url) {
-    let response = await fetch(url, {method: 'POST'});
-    let data = await response.json();
-    console.log(data);
+    try{
+      let response = await fetch(url, {method: 'POST'});
+      let data = await response.json();
+      return true
+    }catch(error){
+      console.log(error);
+      return false;
+    }
+
+    
   }
   
   if(isTel(number) && !isEmpty(name) && !isEmpty(email) && !isEmpty(message)){
-     sendData('https://educonsult.herokuapp.com/api/Contact');
-     setFormErr({
-      ...formErr,
-      nameSuccess: 'Form submitted successfully',
-    })
+     let response = sendData('https://educonsult.herokuapp.com/api/Contact');
+     if(response){
+       setFormErr({
+        ...formErr,
+        nameSuccess: 'Form submitted successfully',
+      })
+     }else{
+       console.log('form not submitted');
+       setFormErr({
+        ...formErr,
+        nameSuccess: 'Form not submitted',
+      })
+     }
      
   }else {
     if(!isEmpty(name)){
