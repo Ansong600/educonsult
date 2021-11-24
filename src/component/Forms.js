@@ -53,7 +53,7 @@ function formHandler(event){
   }
   
   if(isTel(number) && !isEmpty(name) && !isEmpty(email) && !isEmpty(message)){
-     sendData('http://127.0.0.1:8000/api/Contact');
+     sendData('https://educonsult.herokuapp.com/api/Contact');
      setFormErr({
       ...formErr,
       nameSuccess: 'Form submitted successfully',
