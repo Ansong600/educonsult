@@ -59,6 +59,7 @@ function formHandler(event){
         method: 'POST',
         body: JSON.stringify(data),
       });
+      console.log('response submitted');
 
       return true
     }catch(error){
@@ -74,13 +75,13 @@ function formHandler(event){
      if(response){
        setFormErr({
         ...formErr,
-        nameSuccess: 'Form submitted successfully',
+        formSuccess: 'Form submitted successfully',
       })
      }else{
        console.log('form not submitted');
        setFormErr({
         ...formErr,
-        nameSuccess: 'Form not submitted',
+        formSuccess: 'Form not submitted',
       })
      }
      
