@@ -78,6 +78,8 @@ function formHandler(event){
         formSuccess: 'Form submitted successfully',
       })
       console.log('response received');
+
+      
      }else{
        console.log('form not submitted');
        setFormErr({
