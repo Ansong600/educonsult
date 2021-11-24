@@ -47,9 +47,19 @@ function formHandler(event){
 
 
   async function sendData(url) {
+
+    data = {
+      name: name,
+      email: email,
+      phone: number,
+      message: message
+    }
     try{
-      let response = await fetch(url, {method: 'POST'});
-      let data = await response.json();
+      let response = await fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data),
+      });
+
       return true
     }catch(error){
       console.log(error);
