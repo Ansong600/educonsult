@@ -36,8 +36,8 @@ function Footer() {
                     </div>
                     <div className='footer-link-items'>
                         <h2> Contact Info </h2>
-                        <p><b>+233 XXX XXX XXX</b></p>
-                        <p><b>University of Ghana, Legon</b></p>
+                        <p className='telephone'><b>+233 XXX XXX XXX</b></p>
+                        <p className='location'><b>University of Ghana, Legon</b></p>
                         {/* <Link to='/'>Support</Link> */}
                         {/* <Link to='/'>Destination</Link> */}
                         {/* <Link to='/study-abroad'>Scholarships</Link> */}

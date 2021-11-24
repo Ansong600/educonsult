@@ -50,6 +50,9 @@
     display: flex;
     justify-content: center;
 }
+.footer-links p{
+   color: #fff;
+}
 
 .footer-link-wrapper{
     display: flex;
@@ -116,6 +119,7 @@
     justify-content: space-between;
     align-items: center;
     width: 240px;
+    margin-bottom: .5rem;
     
 }
 

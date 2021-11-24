@@ -75,6 +75,10 @@
 
  
 @media screen and (max-width: 900px){
+    .container1 {
+        margin-bottom: 5rem;
+    
+    }
     .header{
         margin: 0 auto;
         width:70%;
@@ -84,7 +88,7 @@
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "divh1" 
                              "divh2";
-        grid-gap: 5rem;
+        grid-gap: 3rem;
         text-align: justify;
     }
     .divh1,.divh2{
@@ -99,22 +103,28 @@
 
 @media screen and (max-width: 600px){
     .header{
-
+        grid-gap: 1.5rem;
+    }
+    .header3{
+        margin-top:1.2rem;
     }
     .divh1 h1,.divh2 h1,.divh3 h1{
       font-size:1.2rem;  
     }
-    .divh1 p,.divh2 p{
-               
+    .divh1 p,.divh2 ,.divh3 p{
+           font-size: .9rem;   
+    }
+    .text{
+        font-size:.9rem;
     }
     .read-or-hide{
         width:40%;
     }
 
 }
-@media screen and (max-width: 600px){
-    .header{
-
+@media screen and (max-width: 375px){
+    .header3{
+      
     }
     .divh1,.divh2{
         

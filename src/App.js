@@ -9,6 +9,7 @@ import Services from './component/Pages/Services';
 import StudyAbroad from './component/Pages/StudyAbroad';
 import Testimonial from './component/Pages/Testimonial';
 import Contact from './component/Pages/Contact';
+// import Datafetching from './component/Datafetching';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         </Switch>
         <Footer/>
       </Router>
-     
+     {/* <Datafetching/> */}
     </div>
   );
 }

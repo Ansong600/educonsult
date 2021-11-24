@@ -318,15 +318,7 @@
   }
 
   .navbar-logo {
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%); */
-    position: absolute;
-    top: 20%;
-    left: -60px;
-    transform: translate(25%, 50%);
-    width: 50%;
+
   }
 
   .menu-icon {
@@ -371,13 +363,11 @@
         font-size: 1rem;
     }
 }
-/* @media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
     .navbar-logo{
-        width:90%;
-        font-size: .8rem;
-       
+        font-size: .8rem; 
     }
-} */
+}
 
 
 

@@ -7,6 +7,7 @@ function AboutHero() {
         <div className='about-container'>
             <div className='first-section'>
                 <div className='div1'>
+                    {/* <div className='div1-image-1'></div> */}
                     {/* Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,  */}
                 </div>
                 <div className='div2'>
