@@ -39,7 +39,7 @@ const isEmpty = (value) => {
 }
 
 function formHandler(event){
-  // event.preventDefault();
+  event.preventDefault();
   let name = input1.current.value;
   let email = input2.current.value;
   let number = input3.current.value;
