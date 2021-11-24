@@ -110,8 +110,8 @@ function formHandler(event){
 
       
     return (
-        <div className="contact-formgroup" onSubmit={formHandler}>
-            <form action="#" className="form">
+        <div className="contact-formgroup" >
+            <form action="#" className="form" onSubmit={formHandler}>
                         <h2 className="heading-secondary">
                           <i>You can reach us here</i>
                           <p>{formErr.numberError}</p>
