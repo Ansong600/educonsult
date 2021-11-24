@@ -63,7 +63,7 @@ function formHandler(event){
 
       return true
     }catch(error){
-      console.log(error);
+      console.log('sendy data error: '+ error);
       return false;
     }
 
@@ -77,6 +77,7 @@ function formHandler(event){
         ...formErr,
         formSuccess: 'Form submitted successfully',
       })
+      console.log('response received');
      }else{
        console.log('form not submitted');
        setFormErr({
