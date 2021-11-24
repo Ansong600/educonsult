@@ -97,6 +97,8 @@ function formHandler(event){
         messageError: 'This field can not be empty',
       })      
     }
+
+    console.log('validation check error');
   }
 
 }
