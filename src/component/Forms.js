@@ -39,7 +39,7 @@ const isEmpty = (value) => {
 }
 
 function formHandler(event){
-  event.preventDefault();
+  // event.preventDefault();
   let name = input1.current.value;
   let email = input2.current.value;
   let number = input3.current.value;
@@ -54,7 +54,10 @@ function formHandler(event){
   
   if(isTel(number) && !isEmpty(name) && !isEmpty(email) && !isEmpty(message)){
      sendData('http://127.0.0.1:8000/api/Contact');
-    // console.log(response);
+     setFormErr({
+      ...formErr,
+      nameSuccess: 'Form submitted successfully',
+    })
      
   }else {
     if(!isEmpty(name)){
@@ -80,7 +83,7 @@ function formHandler(event){
             <form action="#" className="form">
                         <h2 className="heading-secondary">
                           <i>You can reach us here</i>
-
+                          <p>{formErr.numberError}</p>
                         </h2>
                     {/* <div className="form-content"> */}
                         <div className="form__group">
